@@ -21,7 +21,9 @@ body {
     line-height: 1.25;
 }
 
-
+b {
+    font-weight: 600;
+}
 
 
 
