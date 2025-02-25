@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatah Abdilah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+
+
+    <div id="app">
+        <div id="loading">Loading<span>.</span><span>.</span><span>.</span></span><span>.</span></div>
+    </div>
+    <div class="headernav">
+        <header>
+            <h1>HI, I AM <span>FATAH ABDILAH</span></h1>
+            <!-- <p class="typing-container">Front-end Website Developer and Lifelong Learner.</p> -->
+
+
+
+            <p id="demo"></p><span id="blinking-cursor">|</span>
+
+            <script>
+                // Fungsi untuk memulai animasi typewriter
+                function startTypewriter() {
+                    var i = 0;
+                    var txt = 'UI/UX Designer and Front-end Website Developer.';
+                    var speed = 100; // Kecepatan pengetikan
+                    var blinkingCursor = document.getElementById("blinking-cursor");
+
+                    function typeWriter() {
+                        if (i < txt.length) {
+                            document.getElementById("demo").innerHTML += txt.charAt(i);
+                            i++;
+                            setTimeout(typeWriter, speed);
+                        } else {
+                            blinkingCursor.classList.add("blinking"); // Mengaktifkan animasi kedip setelah selesai mengetik
+                        }
+                    }
+
+                    typeWriter(); // Memulai pengetikan
+                }
+
+                // Menunggu sampai proses loading selesai, lalu memulai animasi
+                window.addEventListener('load', function () {
+                    setTimeout(() => {
+                        startTypewriter(); // Mulai animasi typewriter setelah loading selesai
+                    }, 5000); // Pastikan waktu ini sinkron dengan loading
+                });
+            </script>
+
+
+
+        </header>
+        <nav class="navheader" style="overflow: auto;height: 100%">
+            <!-- <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul> -->
+            <ul>
+                <li>
+                    <a href="#about" class="link">
+                        <span class="mask">
+                            <div class="link-container">
+                                <span class="link-title1 title">ABOUT</span>
+                                <span class="link-title2 title">ABOUT</span>
+                            </div>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience" class="link">
+                        <span class="mask">
+                            <div class="link-container">
+                                <span class="link-title1 title">EXPERIENCE</span>
+                                <span class="link-title2 title">EXPERIENCE</span>
+                            </div>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="link">
+                        <span class="mask">
+                            <div class="link-container">
+                                <span class="link-title1 title">SKILLS</span>
+                                <span class="link-title2 title">SKILLS</span>
+                            </div>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="link">
+                        <span class="mask">
+                            <div class="link-container">
+                                <span class="link-title1 title">CONTACT</span>
+                                <span class="link-title2 title">CONTACT</span>
+                            </div>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section id="about" ">
+        <nav class=" navmenu">
+        <ul>
+            <li><a href="">MENU</a><span></span></li>
+        </ul>
+        </nav>
+        <div class="wraper">
+            <div class="aboutme">
+                <h2 class="glitch" data-text="About Me">About Me</h2>
+                <img src="asset/Fatah Abdilah.png" alt="Fatah Abdilah">
+            </div>
+            <div class="hi">
+                <!-- <h3>Hi, I'm Fatah Abdilah</h3> -->
+                <p>
+                    I am a Computer Engineering student at Universitas Pamulang with a strong interest in web
+                    development. I am dedicated to deepening my knowledge in this field and applying it to create
+                    responsive and user-oriented web solutions, with practical experience in developing efficient
+                    interfaces and optimizing web performance.
+                </p>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li>
+                        <p>
+                            <a href="https://unpam.ac.id/" target="_blank" class="linkbiru">Universitas Pamulang</a>
+                            <br>
+                            <i>Informatics Engineering</i>
+                            <br>
+                            <time datetime="">(2023 - present)</time>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="https://smkn1tengaran.sch.id/" target="_blank" class="linkbiru">SMKN 1
+                                Tengaran</a>
+                            <br>
+                            <i>Software Engineering</i>
+                            <br>
+                            <time datetime="">(2019 - 2022)</time>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <nav class="navmenu">
+            <ul>
+                <li><a href="">MENU</a><span></span></li>
+                <li><a href="#wrk" class="nsa active">WRK</a></li>
+                <li><a href="#prj" class="nsa">PRJ</a></li>
+            </ul>
+        </nav>
+        <div class="wraper">
+            <div id="wrk" class="wrkprj">
+                <div>
+                    <h2>WORK</h2>
+                    <p>Over the past year, I have been active in web development and continue to learn and acquire new
+                        skills every day.
+                    </p>
+                </div>
+                <ul style="overflow: auto;height: 100%">
+                    <li>
+                        <a href="https://smkn1tengaran.sch.id/" class="linkmiring" target="_blank">X-SATA</a>
+                        <p>- Software Developer / Intern</p>
+                    </li>
+                    <li>
+                        <a href="https://filkom.unpam.ac.id/" class="linkmiring" target="_blank">FILKOM UNPAM</a>
+                        <p>- Website Administrator / Intern</p>
+                    </li>
+                    <li>
+                        <a href="https://webdev.co.id/" class="linkmiring" target="_blank">WEBDEV.CO.ID</a>
+                        <p>- Founder</p>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div id="prj" class="wrkprj">
+                <div>
+                    <h2>MY PROJECT</h2>
+                    <p>I dedicate myself to creating web development projects that provide solutions and are easy to
+                        use.</p>
+                </div>
+                <ul style="overflow: auto;height: 100%">
+
+                    <li><a href="https://openjournal.unpam.ac.id/index.php/Tadris" target="_blank">TADRIS</a>
+                        <p>- Open Journal System</p>
+                    </li>
+                    <li><a href="https://openjournal.unpam.ac.id/index.php/ARG" target="_blank">ABDI RELIGIA</a>
+                        <p>- Open Journal System</p>
+                    </li>
+                    <li><a href="https://openjournal.unpam.ac.id/index.php/PIE" target="_blank">PIE</a>
+                        <p>- Open Journal System</p>
+                    </li>
+                    <li><a href="https://filkom.unpam.ac.id/" target="_blank">FILKOM UNPAM</a>
+                        <p>- Wordpress</p>
+                    </li>
+                    <li>
+                        <a href="https://mpi.unpam.ac.id/" target="_blank">MPI UNPAM</a>
+                        <p>- Wordpress</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <nav class="navmenu">
+            <ul>
+                <li><a href="">MENU</a><span></span></li>
+            </ul>
+        </nav>
+        <div class="myskills myce">
+            <h2>MY SKILLS</h2>
+            <ul style="display: grid; gap: 0.5em;">
+                <li>
+                    <h3>UI/UX DESIGN</h3>
+                    <p>Tools: Figma</p>
+                </li>
+                <li>
+                    <h3>FRONT-END WEBSITE DEVELOPER</h3>
+                    <p>Language: HTML/CSS, JavaScript, Bootstrap</p>
+                    <p>CMS: Wordpress, Open Journal System</p>
+                    <p>Tools: VsCode, Git, GitHub</p>
+                </li>
+            </ul>
+        </div>
+        <div class="certification myce">
+            <h2>CERTIFICATION</h2>
+            <ul>
+                <li>Level II KKNI on Expertise Competency of Software Engineering</li>
+            </ul>
+        </div>
+        <a href="asset/Fatah Abdilah-resume.pdf" class="myresume" target="_blank">
+            <span>My Resume </span>
+            <span>My Resume</span>
+        </a>
+    </section>
+    <section id="contact">
+        <nav class="navmenu">
+            <ul>
+                <li><a href="">MENU</a><span></span></li>
+            </ul>
+        </nav>
+        <div class="contactme">
+            <h2 class="glitch" data-text="CONTACT ME">CONTACT ME</h2>
+            <p class="pjustify">For questions, business, and collaborations please contact me below. I'm waiting for
+                your questions.</p>
+            <p>
+                Email: <a href="mailto:fatahabdilahh@gmail.com" target="_blank"
+                    class="linkbiru">fatahabdilahh@gmail.com</a>
+                <br>
+                On the Internet: <a href="https://www.linkedin.com/in/fatahabdilah/" target="_blank"
+                    class="linkbiru">LinkedIn</a>
+                /
+                <a href="https://github.com/fatahabdilah" target="_blank" class="linkbiru">Github</a>
+                /
+                <a href="https://www.instagram.com/fatahabdilahhh/" target="_blank" class="linkbiru">Instagram</a>
+            </p>
+        </div>
+    </section>
+    <div class="cursor"></div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
